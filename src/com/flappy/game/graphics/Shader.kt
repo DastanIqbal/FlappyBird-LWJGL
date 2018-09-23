@@ -14,13 +14,14 @@ class Shader {
 
     var ID = 0
     val locationCache = HashMap<String, Int>()
+    var enabled = false
 
     companion object {
         val VERTEX_ATTRIB = 0
-        val TEXTURE_ATTRIB = 1
-        lateinit var BASIC: Shader
-        fun loadAll() {
-            BASIC = Shader("shaders/shader.vert", "shaders/shader.frag")
+        val TCOORD_ATTRIB = 1
+        lateinit var BG: Shader
+        fun LoadAll() {
+            BG = Shader("shaders/bg.vert", "shaders/bg.frag")
         }
     }
 
@@ -41,30 +42,37 @@ class Shader {
     }
 
     fun setUniform1i(name: String, value: Int) {
+        if (!enabled) enable()
         GL20.glUniform1i(getUniform(name), value)
     }
 
     fun setUniform1f(name: String, value: Float) {
+        if (!enabled) enable()
         GL20.glUniform1f(getUniform(name), value)
     }
 
     fun setUniform2f(name: String, x: Float, y: Float) {
+        if (!enabled) enable()
         GL20.glUniform2f(getUniform(name), x, y)
     }
 
     fun setUniform3f(name: String, vector3f: Vector3f) {
+        if (!enabled) enable()
         GL20.glUniform3f(getUniform(name), vector3f.x, vector3f.y, vector3f.z)
     }
 
     fun setUniformMat4(name: String, matrix: Matrix4f) {
+        if (!enabled) enable()
         GL20.glUniformMatrix4fv(getUniform(name), false, matrix.toFloatBuffer())
     }
 
     fun enable() {
         GL20.glUseProgram(ID)
+        enabled = true
     }
 
     fun disable() {
         GL20.glUseProgram(0)
+        enabled = false
     }
 }

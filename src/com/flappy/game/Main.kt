@@ -1,9 +1,15 @@
 package com.flappy.game
 
+import com.flappy.game.graphics.Shader
 import com.flappy.game.input.Input
+import com.flappy.game.level.Level
+import com.flappy.game.math.Matrix4f
+import com.flappy.game.util.OpenGLUtils
 import org.lwjgl.glfw.GLFW.*
 import org.lwjgl.opengl.GL
 import org.lwjgl.opengl.GL11.*
+import org.lwjgl.opengl.GL13.GL_TEXTURE1
+import org.lwjgl.opengl.GL13.glActiveTexture
 import org.lwjgl.system.MemoryUtil.NULL
 
 
@@ -20,6 +26,7 @@ class Main : Runnable {
     var running = false
     var mainThread: Thread? = null
     var window = 0L
+    var level: Level? = null
 
     fun start() {
         running = true
@@ -32,6 +39,8 @@ class Main : Runnable {
             //TODO: handle it
         }
 
+        glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3)
+        glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3)
         glfwWindowHint(GLFW_RESIZABLE, GL_TRUE)
         window = glfwCreateWindow(width, height, "Flappy", NULL, NULL)
 
@@ -50,7 +59,15 @@ class Main : Runnable {
 
         glClearColor(1.0f, 1.0f, 1.0f, 1.0f)
         glEnable(GL_DEPTH_TEST)
+        glActiveTexture(GL_TEXTURE1)
         println("OpenGL ${glGetString(GL_VERSION)}")
+        Shader.LoadAll()
+
+        val pr_matrix = Matrix4f.orthographic(-10f, 10f, -10f * 9f / 16f, 10f * 9f / 16f, -1f, 1f)
+        Shader.BG.setUniformMat4("pr_matrix", pr_matrix)
+        Shader.BG.setUniform1i("tex", 1)
+
+        level = Level()
     }
 
     override fun run() {
@@ -73,6 +90,8 @@ class Main : Runnable {
 
     fun render() {
         glClear(GL_COLOR_BUFFER_BIT.or(GL_DEPTH_BUFFER_BIT))
+        level?.render()
+        OpenGLUtils.checkError("Main::render")
         glfwSwapBuffers(window)
     }
 }

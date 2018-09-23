@@ -1,6 +1,7 @@
 package com.flappy.game.graphics
 
 import com.flappy.game.util.BufferUtils
+import com.flappy.game.util.OpenGLUtils
 import org.lwjgl.opengl.GL11
 import java.io.FileInputStream
 import javax.imageio.ImageIO
@@ -23,10 +24,10 @@ class Texture {
         val image = ImageIO.read(FileInputStream(path))
         width = image.width
         height = image.height
-        val pixels = intArrayOf(width * height)
+        val pixels = IntArray(width * height)
         image.getRGB(0, 0, width, height, pixels, 0, width)
 
-        val data = intArrayOf(width * height)
+        val data = IntArray(width * height)
         (0 until width * height).forEach {
             val a = (pixels[it].and(0xff000000.toInt())).shr(24)
             val r = (pixels[it].and(0xff0000)).shr(16)
