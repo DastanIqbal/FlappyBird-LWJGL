@@ -1,6 +1,8 @@
 package com.flappy.game.math
 
+import com.flappy.game.util.BufferUtils
 import java.lang.Math.*
+import java.nio.FloatBuffer
 
 /**
  * Created by dastaniqbal on 23/09/2018.
@@ -11,7 +13,7 @@ class Matrix4f {
     val matrix = floatArrayOf(4.0f * 4.0f)
     fun identity(): Matrix4f {
         val result = Matrix4f()
-        (0 until 4).forEach {
+        (0 until 4 * 4).forEach {
             result.matrix[it] = 0.0f
         }
 
@@ -75,5 +77,9 @@ class Matrix4f {
         result.matrix[1 + 3 * 4] = bottom + top / (bottom - top)
         result.matrix[2 + 3 * 4] = near + far / (far - near)
         return result
+    }
+
+    fun toFloatBuffer(): FloatBuffer {
+        return BufferUtils.createFloateBuffer(matrix)
     }
 }

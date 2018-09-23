@@ -1,7 +1,9 @@
 package com.flappy.game
 
-import org.lwjgl.glfw.GLFW
-import org.lwjgl.opengl.GL11
+import com.flappy.game.input.Input
+import org.lwjgl.glfw.GLFW.*
+import org.lwjgl.opengl.GL
+import org.lwjgl.opengl.GL11.*
 import org.lwjgl.system.MemoryUtil.NULL
 
 
@@ -26,22 +28,29 @@ class Main : Runnable {
     }
 
     private fun init() {
-        if (!GLFW.glfwInit()) {
+        if (!glfwInit()) {
             //TODO: handle it
         }
 
-        GLFW.glfwWindowHint(GLFW.GLFW_RESIZABLE, GL11.GL_TRUE)
-        window = GLFW.glfwCreateWindow(width, height, "Flappy", NULL, NULL)
+        glfwWindowHint(GLFW_RESIZABLE, GL_TRUE)
+        window = glfwCreateWindow(width, height, "Flappy", NULL, NULL)
+
         if (window == NULL) {
             //TODO: handle it
             return
         }
 
-        val vidmode = GLFW.glfwGetVideoMode(GLFW.glfwGetPrimaryMonitor())
-        GLFW.glfwSetWindowPos(window, (vidmode?.width()!! - width) / 2, (vidmode.height() - height) / 2)
+        val vidmode = glfwGetVideoMode(glfwGetPrimaryMonitor())
+        glfwSetWindowPos(window, (vidmode?.width()!! - width) / 2, (vidmode.height() - height) / 2)
 
-        GLFW.glfwMakeContextCurrent(window)
-        GLFW.glfwShowWindow(window)
+        glfwSetKeyCallback(window, Input())
+        glfwMakeContextCurrent(window)
+        GL.createCapabilities()
+        glfwShowWindow(window)
+
+        glClearColor(1.0f, 1.0f, 1.0f, 1.0f)
+        glEnable(GL_DEPTH_TEST)
+        println("OpenGL ${glGetString(GL_VERSION)}")
     }
 
     override fun run() {
@@ -50,17 +59,21 @@ class Main : Runnable {
             update()
             render()
 
-            if (GLFW.glfwWindowShouldClose(window))
+            if (glfwWindowShouldClose(window))
                 running = false
         }
     }
 
     fun update() {
-        GLFW.glfwPollEvents()
+        glfwPollEvents()
+        if (Input.keys[GLFW_KEY_SPACE]) {
+            println("FLAP !!")
+        }
     }
 
     fun render() {
-        GLFW.glfwSwapBuffers(window)
+        glClear(GL_COLOR_BUFFER_BIT.or(GL_DEPTH_BUFFER_BIT))
+        glfwSwapBuffers(window)
     }
 }
 

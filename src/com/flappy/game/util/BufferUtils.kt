@@ -18,7 +18,7 @@ object BufferUtils {
         return result
     }
 
-    fun createFloateBuffer(array: FloatArray): FloatBuffer {
+    fun createFloatBuffer(array: FloatArray): FloatBuffer {
         //                                      lef shift << 2 or multiply by 4 mathematically same
         val result = ByteBuffer.allocateDirect(array.size.shl(2)).order(ByteOrder.nativeOrder()).asFloatBuffer()
         result.put(array).flip()

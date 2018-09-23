@@ -40,6 +40,9 @@ object ShaderUtils {
 
         glLinkProgram(program)
         glValidateProgram(program)
+
+        glDeleteShader(vertId)
+        glDeleteShader(fragId)
         return program
     }
 }
