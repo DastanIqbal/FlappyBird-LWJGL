@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="114030ee-4023-43c4-a3fd-aab6e0d29f8c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/shaders/bg.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/bg.vert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/flappy/game/level/Level.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/flappy/game/util/OpenGLUtils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/graphics/Shader$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/graphics/Shader$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/graphics/Shader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/graphics/Shader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/graphics/Texture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/graphics/Texture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/math/Matrix4f.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/math/Matrix4f.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/util/BufferUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/util/BufferUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/util/ShaderUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/util/ShaderUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/level/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/level/Level.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/math/Matrix4f$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/math/Matrix4f$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/bg.vert" beforeDir="false" afterPath="$PROJECT_DIR$/shaders/bg.vert" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/flappy/game/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flappy/game/graphics/Shader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/graphics/Shader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flappy/game/graphics/Texture.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/graphics/Texture.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flappy/game/graphics/VertexArray.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/graphics/VertexArray.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flappy/game/level/Level.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/level/Level.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/flappy/game/math/Matrix4f.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/math/Matrix4f.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,56 +25,53 @@
       <file leaf-file-name="Main.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/flappy/game/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+            <state relative-caret-position="294">
+              <caret line="96" column="38" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
               <folding>
-                <element signature="e#25#225#0" expanded="true" />
+                <element signature="e#25#337#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Matrix4f.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/flappy/game/math/Matrix4f.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
+              <folding>
+                <element signature="e#30#121#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Level.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/flappy/game/level/Level.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+            <state relative-caret-position="192">
+              <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
               <folding>
-                <element signature="e#31#113#0" expanded="true" />
+                <element signature="e#31#227#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VertexArray.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/flappy/game/graphics/VertexArray.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
-              <folding>
-                <element signature="e#34#173#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OpenGLUtils.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/flappy/game/util/OpenGLUtils.kt">
+      <file leaf-file-name="bg.vert" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shaders/bg.vert">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Texture.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/flappy/game/graphics/Texture.kt">
+      <file leaf-file-name="Primitives.kt" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/Primitives.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
-              <folding>
-                <element signature="e#34#162#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="127">
+              <caret line="491" column="24" selection-start-line="491" selection-start-column="24" selection-end-line="491" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -116,20 +104,20 @@
         <option value="$PROJECT_DIR$/src/com/flappy/game/Main.java" />
         <option value="$PROJECT_DIR$/src/com/flappy/game/math/Vector3f.kt" />
         <option value="$PROJECT_DIR$/src/com/flappy/game/util/FileUtils.kt" />
-        <option value="$PROJECT_DIR$/shaders/shader.vert" />
         <option value="$PROJECT_DIR$/shaders/shader.frag" />
         <option value="$PROJECT_DIR$/src/com/flappy/game/input/Input.kt" />
         <option value="$PROJECT_DIR$/src/com/flappy/game/util/ShaderUtils.kt" />
-        <option value="$PROJECT_DIR$/src/com/flappy/game/util/BufferUtils.kt" />
-        <option value="$PROJECT_DIR$/src/com/flappy/game/math/Matrix4f.kt" />
-        <option value="$PROJECT_DIR$/src/com/flappy/game/level/Level.kt" />
-        <option value="$PROJECT_DIR$/shaders/bg.vert" />
         <option value="$PROJECT_DIR$/src/com/flappy/game/util/OpenGLUtils.kt" />
+        <option value="$PROJECT_DIR$/src/com/flappy/game/graphics/Texture.kt" />
+        <option value="$PROJECT_DIR$/src/com/flappy/game/graphics/VertexArray.kt" />
+        <option value="$PROJECT_DIR$/shaders/shader.vert" />
         <option value="$PROJECT_DIR$/src/com/flappy/game/graphics/Shader.kt" />
         <option value="$PROJECT_DIR$/shaders/bg.frag" />
-        <option value="$PROJECT_DIR$/src/com/flappy/game/graphics/Texture.kt" />
+        <option value="$PROJECT_DIR$/src/com/flappy/game/util/BufferUtils.kt" />
+        <option value="$PROJECT_DIR$/src/com/flappy/game/math/Matrix4f.kt" />
+        <option value="$PROJECT_DIR$/shaders/bg.vert" />
         <option value="$PROJECT_DIR$/src/com/flappy/game/Main.kt" />
-        <option value="$PROJECT_DIR$/src/com/flappy/game/graphics/VertexArray.kt" />
+        <option value="$PROJECT_DIR$/src/com/flappy/game/level/Level.kt" />
       </list>
     </option>
   </component>
@@ -331,12 +319,12 @@
       <updated>1537704202267</updated>
       <workItem from="1537704203847" duration="5980000" />
       <workItem from="1537710222480" duration="6600000" />
-      <workItem from="1537718807355" duration="4966000" />
+      <workItem from="1537718807355" duration="7284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17546000" />
+    <option name="totallyTimeSpent" value="19864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="25" width="1321" height="743" extended-state="6" />
@@ -388,7 +376,7 @@
           <properties />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -559,13 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shaders/shader.vert">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../lwjgl3/lwjgl-glfw/lwjgl-glfw.jar!/org/lwjgl/glfw/GLFW.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -604,16 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flappy/game/util/BufferUtils.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding>
-            <element signature="e#30#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/flappy/game/util/ShaderUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -621,13 +592,6 @@
           <folding>
             <element signature="e#30#89#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shaders/shader.frag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -641,62 +605,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flappy/game/math/Matrix4f.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="e#30#121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/bg.jpeg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shaders/bg.vert">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shaders/bg.frag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flappy/game/level/Level.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-          <folding>
-            <element signature="e#31#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flappy/game/Main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
-          <folding>
-            <element signature="e#25#225#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flappy/game/graphics/Shader.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="e#34#176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/flappy/game/util/OpenGLUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -715,12 +625,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/shader.vert">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flappy/game/graphics/Shader.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+          <folding>
+            <element signature="e#34#176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/shader.frag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/bg.frag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/flappy/game/graphics/VertexArray.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+        <state relative-caret-position="183">
+          <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
           <folding>
             <element signature="e#34#173#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flappy/game/util/BufferUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#30#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flappy/game/math/Matrix4f.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
+          <folding>
+            <element signature="e#30#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/kotlin-stdlib-sources.jar!/kotlin/Primitives.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="491" column="24" selection-start-line="491" selection-start-column="24" selection-end-line="491" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shaders/bg.vert">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flappy/game/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="96" column="38" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
+          <folding>
+            <element signature="e#25#337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flappy/game/level/Level.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+          <folding>
+            <element signature="e#31#227#0" expanded="true" />
           </folding>
         </state>
       </provider>

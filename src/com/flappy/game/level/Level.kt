@@ -3,6 +3,8 @@ package com.flappy.game.level
 import com.flappy.game.graphics.Shader
 import com.flappy.game.graphics.Texture
 import com.flappy.game.graphics.VertexArray
+import com.flappy.game.math.Matrix4f
+import com.flappy.game.math.Vector3f
 
 /**
  * Created by dastaniqbal on 24/09/2018.
@@ -12,6 +14,8 @@ import com.flappy.game.graphics.VertexArray
 class Level {
     var background: VertexArray
     var bgtexture: Texture
+    var xscroll = 0
+    var map = 0
 
     init {
         val vertices = floatArrayOf(
@@ -37,10 +41,21 @@ class Level {
         bgtexture = Texture("res/bg.jpeg")
     }
 
+    fun update() {
+        xscroll--
+        if (-xscroll.rem(335) == 0) {
+            map++
+        }
+    }
+
     fun render() {
         bgtexture.bind()
         Shader.BG.enable()
-        background.render()
+        background.bind()
+        (0 until map + 3).forEach {
+            Shader.BG.setUniformMat4("vw_matrix", Matrix4f.translate(Vector3f((it * 10 + xscroll * 0.03f).toFloat(), 0f, 0f)))
+            background.draw()
+        }
         Shader.BG.disable()
         bgtexture.unbind()
     }

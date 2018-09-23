@@ -57,9 +57,9 @@ class Matrix4f {
             result.matrix[1 + 1 * 4] = 2.0f / (top - bottom)
             result.matrix[2 + 2 * 4] = 2.0f / (near - far)
 
-            result.matrix[0 + 3 * 4] = left + right / (left - right)
-            result.matrix[1 + 3 * 4] = bottom + top / (bottom - top)
-            result.matrix[2 + 3 * 4] = near + far / (far - near)
+            result.matrix[0 + 3 * 4] = (left + right) / (left - right)
+            result.matrix[1 + 3 * 4] = (bottom + top) / (bottom - top)
+            result.matrix[2 + 3 * 4] = (far + near) / (far - near)
             return result
         }
     }

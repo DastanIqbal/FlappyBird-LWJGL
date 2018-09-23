@@ -72,10 +72,32 @@ class Main : Runnable {
 
     override fun run() {
         init()
-        while (running) {
-            update()
-            render()
 
+        var lastTime = System.nanoTime()
+        var delta = 0.0
+        val ns = 1000000000 / 60.0
+        var timer = System.currentTimeMillis()
+        var updates = 0
+        var frames = 0
+
+        while (running) {
+            val now = System.nanoTime()
+            delta += (now - lastTime) / ns
+            lastTime = now
+
+            if (delta >= 1.0) {
+                update()
+                updates++
+                delta--
+            }
+            render()
+            frames++
+            if (System.currentTimeMillis() - timer > 1000) {
+                timer += 1000
+                println("$updates ups $frames fps")
+                updates = 0
+                frames = 0
+            }
             if (glfwWindowShouldClose(window))
                 running = false
         }
@@ -83,6 +105,7 @@ class Main : Runnable {
 
     fun update() {
         glfwPollEvents()
+        level?.update()
         if (Input.keys[GLFW_KEY_SPACE]) {
             println("FLAP !!")
         }
