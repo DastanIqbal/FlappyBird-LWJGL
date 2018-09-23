@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="114030ee-4023-43c4-a3fd-aab6e0d29f8c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/level/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/level/Level.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/math/Matrix4f$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/math/Matrix4f$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shaders/bg.vert" beforeDir="false" afterPath="$PROJECT_DIR$/shaders/bg.vert" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flappy/game/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flappy/game/level/Level.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/level/Level.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flappy/game/math/Matrix4f.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/math/Matrix4f.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,14 +38,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Level.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/flappy/game/level/Level.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+            <state relative-caret-position="259">
+              <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding>
                 <element signature="e#31#227#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -118,6 +119,7 @@
         <option value="$PROJECT_DIR$/shaders/bg.vert" />
         <option value="$PROJECT_DIR$/src/com/flappy/game/Main.kt" />
         <option value="$PROJECT_DIR$/src/com/flappy/game/level/Level.kt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -150,87 +152,6 @@
             <path>
               <item name="FLappyBird-LWJGL" type="b2602c69:ProjectViewProjectNode" />
               <item name="FLappyBird-LWJGL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FLappyBird-LWJGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FLappyBird-LWJGL" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FLappyBird-LWJGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FLappyBird-LWJGL" type="462c0819:PsiDirectoryNode" />
-              <item name="shaders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FLappyBird-LWJGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FLappyBird-LWJGL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FLappyBird-LWJGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FLappyBird-LWJGL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FLappyBird-LWJGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FLappyBird-LWJGL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flappy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FLappyBird-LWJGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FLappyBird-LWJGL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flappy" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FLappyBird-LWJGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FLappyBird-LWJGL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flappy" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FLappyBird-LWJGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FLappyBird-LWJGL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flappy" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="input" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FLappyBird-LWJGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FLappyBird-LWJGL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flappy" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="level" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FLappyBird-LWJGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FLappyBird-LWJGL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="flappy" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FLappyBird-LWJGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="FLappyBird-LWJGL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="lwjgl3" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -319,12 +240,12 @@
       <updated>1537704202267</updated>
       <workItem from="1537704203847" duration="5980000" />
       <workItem from="1537710222480" duration="6600000" />
-      <workItem from="1537718807355" duration="7284000" />
+      <workItem from="1537718807355" duration="7457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19864000" />
+    <option name="totallyTimeSpent" value="20037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="25" width="1321" height="743" extended-state="6" />
@@ -340,11 +261,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28032786" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28032786" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32786885" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25490198" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25490198" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -712,11 +633,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/flappy/game/level/Level.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+        <state relative-caret-position="259">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
             <element signature="e#31#227#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
         </state>
       </provider>
     </entry>

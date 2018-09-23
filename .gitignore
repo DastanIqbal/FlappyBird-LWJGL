@@ -1,0 +1,16 @@
+*.iml
+.gradle
+build/*
+#!build/distributions/
+.idea
+/local.properties
+.DS_Store
+/captures
+.externalNativeBuild
+out
+target/
+/src/main/dist/bin/*.yml
+!/src/main/dist/bin/config.yml.sample
+#/src/main/resources/swagger_ui/dist/v1/swagger.json
+build/
+venv
