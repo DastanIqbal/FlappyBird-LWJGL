@@ -14,7 +14,7 @@ import org.lwjgl.system.MemoryUtil.NULL
 
 /**
  * Created by dastaniqbal on 23/09/2018.
- * dastanIqbal@marvelmedia.com
+ * ask2iqbal@gmail.com
  * 23/09/2018 8:04
  */
 class Main : Runnable {

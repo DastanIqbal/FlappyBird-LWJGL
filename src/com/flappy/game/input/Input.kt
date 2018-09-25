@@ -5,7 +5,7 @@ import org.lwjgl.glfw.GLFWKeyCallback
 
 /**
  * Created by dastaniqbal on 23/09/2018.
- * dastanIqbal@marvelmedia.com
+ * ask2iqbal@gmail.com
  * 23/09/2018 10:41
  */
 class Input : GLFWKeyCallback() {

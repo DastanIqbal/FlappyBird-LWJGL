@@ -2,7 +2,7 @@ package com.flappy.game.math
 
 /**
  * Created by dastaniqbal on 23/09/2018.
- * dastanIqbal@marvelmedia.com
+ * ask2iqbal@gmail.com
  * 23/09/2018 8:26
  */
 class Vector3f {

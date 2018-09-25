@@ -7,7 +7,7 @@ import java.nio.IntBuffer
 
 /**
  * Created by dastaniqbal on 23/09/2018.
- * dastanIqbal@marvelmedia.com
+ * ask2iqbal@gmail.com
  * 23/09/2018 9:28
  */
 object BufferUtils {

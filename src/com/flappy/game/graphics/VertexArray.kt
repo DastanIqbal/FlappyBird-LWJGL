@@ -7,7 +7,7 @@ import org.lwjgl.opengl.GL30.*
 
 /**
  * Created by dastaniqbal on 23/09/2018.
- * dastanIqbal@marvelmedia.com
+ * ask2iqbal@gmail.com
  * 23/09/2018 11:19
  */
 class VertexArray {

@@ -10,7 +10,7 @@ import org.lwjgl.glfw.GLFW
 
 /**
  * Created by dastaniqbal on 24/09/2018.
- * dastanIqbal@marvelmedia.com
+ * ask2iqbal@gmail.com
  * 24/09/2018 12:07
  */
 class Bird {
@@ -46,7 +46,7 @@ class Bird {
         texture = Texture("res/bird.png")
     }
 
-    private fun fall() {
+    fun fall() {
         delta = -0.15f
     }
 

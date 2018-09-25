@@ -5,7 +5,7 @@ import org.lwjgl.opengl.GL20.*
 
 /**
  * Created by dastaniqbal on 23/09/2018.
- * dastanIqbal@marvelmedia.com
+ * ask2iqbal@gmail.com
  * 23/09/2018 9:08
  */
 object ShaderUtils {

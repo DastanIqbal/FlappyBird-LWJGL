@@ -4,7 +4,7 @@ import org.lwjgl.opengl.GL11
 
 /**
  * Created by dastaniqbal on 24/09/2018.
- * dastanIqbal@marvelmedia.com
+ * ask2iqbal@gmail.com
  * 24/09/2018 1:12
  */
 object OpenGLUtils {
