@@ -23,6 +23,7 @@ class Level {
     var index = 0
     var random = Random()
     var offset = 5.0f //quarter screen
+    var control = true
 
     init {
         val vertices = floatArrayOf(
@@ -68,16 +69,23 @@ class Level {
 
 
     fun update() {
-        xscroll--
-        if (-xscroll.rem(335) == 0) {
-            map++
-        }
+        if(control) {
+            xscroll--
+            if (-xscroll.rem(335) == 0) {
+                map++
+            }
 
-        if (-xscroll > 250 && -xscroll.rem(120) == 0) {
-            updatePipes()
+            if (-xscroll > 250 && -xscroll.rem(120) == 0) {
+                updatePipes()
+            }
         }
 
         bird.update()
+        if (control && collision()) {
+            bird.fall()
+            control = false
+            println("Collision")
+        }
     }
 
     fun renderPipes() {
@@ -109,5 +117,31 @@ class Level {
 
         renderPipes()
         bird.render()
+    }
+
+    fun collision(): Boolean {
+        (0 until 5 * 2).forEach {
+            var bx = -xscroll * 0.05f
+            var by = bird.position.y
+            var px = pipe[it].position.x
+            var py = pipe[it].position.y
+
+            var bx0 = bx - bird.SIZE / 2f
+            var bx1 = bx + bird.SIZE / 2f
+            var by0 = bx - bird.SIZE / 2f
+            var by1 = bx + bird.SIZE / 2f
+
+            var px0 = px
+            var px1 = px + Pipe.WIDTH
+            var py0 = py
+            var py1 = py + Pipe.HEIGHT
+
+            if (bx1 > px0 && bx0 < px1) {
+                if (by1 > py0 && by0 < py1) {
+                    return true
+                }
+            }
+        }
+        return false
     }
 }

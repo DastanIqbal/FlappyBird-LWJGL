@@ -46,7 +46,7 @@ class Bird {
         texture = Texture("res/bird.png")
     }
 
-    private fun fall() {
+    fun fall() {
         delta = -0.15f
     }
 
