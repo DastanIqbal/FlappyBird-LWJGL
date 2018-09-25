@@ -61,7 +61,23 @@ class Level {
     }
 
     fun updatePipes() {
+        pipe[index.rem(10)] = Pipe(offset + index * 3.0f, random.nextFloat() * 4.0f) //x
+        pipe[(index + 1).rem(10)] = Pipe(pipe[index.rem(10)].position.x, pipe[index.rem(10)].position.y - 11.5f) //y
+        index += 2
+    }
 
+
+    fun update() {
+        xscroll--
+        if (-xscroll.rem(335) == 0) {
+            map++
+        }
+
+        if (-xscroll > 250 && -xscroll.rem(120) == 0) {
+            updatePipes()
+        }
+
+        bird.update()
     }
 
     fun renderPipes() {
@@ -80,22 +96,12 @@ class Level {
     }
 
 
-    fun update() {
-        xscroll--
-        if (-xscroll.rem(335) == 0) {
-            map++
-        }
-
-        bird.update()
-    }
-
-
     fun render() {
         bgtexture.bind()
         Shader.BG.enable()
         background.bind()
-        (0 until map + 3).forEach {
-            Shader.BG.setUniformMat4("vw_matrix", Matrix4f.translate(Vector3f((it * 10 + xscroll * 0.03f).toFloat(), 0f, 0f)))
+        (0 until map + 4).forEach {
+            Shader.BG.setUniformMat4("vw_matrix", Matrix4f.translate(Vector3f((it * 10 + xscroll * 0.03f), 0f, 0f)))
             background.draw()
         }
         Shader.BG.disable()
