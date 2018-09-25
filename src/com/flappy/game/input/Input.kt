@@ -10,6 +10,11 @@ import org.lwjgl.glfw.GLFWKeyCallback
  */
 class Input : GLFWKeyCallback() {
     companion object {
+
+        fun isKeyDown(keycode: Int): Boolean {
+            return keys[keycode]
+        }
+
         val keys = BooleanArray(65536)
     }
 

@@ -5,6 +5,7 @@ import com.flappy.game.graphics.Texture
 import com.flappy.game.graphics.VertexArray
 import com.flappy.game.math.Matrix4f
 import com.flappy.game.math.Vector3f
+import java.util.*
 
 /**
  * Created by dastaniqbal on 24/09/2018.
@@ -16,6 +17,8 @@ class Level {
     var bgtexture: Texture
     var xscroll = 0
     var map = 0
+
+    var bird: Bird
 
     init {
         val vertices = floatArrayOf(
@@ -39,6 +42,8 @@ class Level {
 
         background = VertexArray(vertices, indices, tcs)
         bgtexture = Texture("res/bg.jpeg")
+
+        bird = Bird()
     }
 
     fun update() {
@@ -46,7 +51,10 @@ class Level {
         if (-xscroll.rem(335) == 0) {
             map++
         }
+
+        bird.update()
     }
+
 
     fun render() {
         bgtexture.bind()
@@ -58,5 +66,7 @@ class Level {
         }
         Shader.BG.disable()
         bgtexture.unbind()
+
+        bird.render()
     }
 }

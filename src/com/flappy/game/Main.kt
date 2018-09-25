@@ -67,6 +67,9 @@ class Main : Runnable {
         Shader.BG.setUniformMat4("pr_matrix", pr_matrix)
         Shader.BG.setUniform1i("tex", 1)
 
+        Shader.BIRD.setUniformMat4("pr_matrix", pr_matrix)
+        Shader.BIRD.setUniform1i("tex", 1)
+
         level = Level()
     }
 
@@ -106,9 +109,6 @@ class Main : Runnable {
     fun update() {
         glfwPollEvents()
         level?.update()
-        if (Input.keys[GLFW_KEY_SPACE]) {
-            println("FLAP !!")
-        }
     }
 
     fun render() {

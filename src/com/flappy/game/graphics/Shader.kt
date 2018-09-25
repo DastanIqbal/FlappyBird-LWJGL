@@ -20,8 +20,11 @@ class Shader {
         val VERTEX_ATTRIB = 0
         val TCOORD_ATTRIB = 1
         lateinit var BG: Shader
+        lateinit var BIRD: Shader
+
         fun LoadAll() {
             BG = Shader("shaders/bg.vert", "shaders/bg.frag")
+            BIRD = Shader("shaders/bird.vert", "shaders/bird.frag")
         }
     }
 
