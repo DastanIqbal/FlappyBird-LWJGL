@@ -22,6 +22,7 @@ class Level {
     var pipe = Array(5 * 2, { Pipe() })
     var index = 0
     var random = Random()
+    var offset = 5.0f //quarter screen
 
     init {
         val vertices = floatArrayOf(
@@ -53,7 +54,7 @@ class Level {
     private fun createPipes() {
         Pipe.create()
         (0 until 5 * 2).step(2).forEach {
-            pipe[it] = Pipe(index * 3.0f, random.nextFloat() * 4.0f)
+            pipe[it] = Pipe(offset + index * 3.0f, random.nextFloat() * 4.0f)
             pipe[it + 1] = Pipe(pipe[it].position.x, pipe[it].position.y - 11.5f)
             index += 2
         }
@@ -70,7 +71,7 @@ class Level {
         Pipe.mesh.bind()
         (0 until 5 * 2).forEach {
             Shader.PIPE.setUniformMat4("ml_matrix", pipe[it].ml_matrix)
-            Shader.PIPE.setUniform1i("top",if(it.rem(2)==0) 1 else 0)
+            Shader.PIPE.setUniform1i("top", if (it.rem(2) == 0) 1 else 0)
             Pipe.mesh.draw()
         }
         Pipe.texture.unbind()

@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="114030ee-4023-43c4-a3fd-aab6e0d29f8c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/shaders/pipe.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/pipe.vert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/flappy/game/level/Pipe.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/graphics/Shader$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/graphics/Shader$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/graphics/Shader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/graphics/Shader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/graphics/VertexArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/graphics/VertexArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/level/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/level/Level.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/util/OpenGLUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FLappyBird-LWJGL/com/flappy/game/util/OpenGLUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flappy/game/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flappy/game/graphics/Shader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/graphics/Shader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flappy/game/graphics/VertexArray.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/graphics/VertexArray.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flappy/game/level/Bird.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/level/Bird.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/flappy/game/level/Level.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/level/Level.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flappy/game/util/OpenGLUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flappy/game/util/OpenGLUtils.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,8 +38,8 @@
       <file leaf-file-name="Level.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/flappy/game/level/Level.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="346">
+              <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
               <folding>
                 <element signature="e#31#246#0" expanded="true" />
               </folding>
@@ -361,12 +345,12 @@
       <workItem from="1537795507757" duration="4556000" />
       <workItem from="1537841393204" duration="139000" />
       <workItem from="1537841567120" duration="982000" />
-      <workItem from="1537885225860" duration="2570000" />
+      <workItem from="1537885225860" duration="2603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28420000" />
+    <option name="totallyTimeSpent" value="28453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="25" width="1321" height="743" extended-state="6" />
@@ -382,8 +366,8 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29836065" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.56393445" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29836065" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.56393445" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20313725" />
@@ -792,8 +776,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/flappy/game/level/Level.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="346">
+          <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
           <folding>
             <element signature="e#31#246#0" expanded="true" />
           </folding>
