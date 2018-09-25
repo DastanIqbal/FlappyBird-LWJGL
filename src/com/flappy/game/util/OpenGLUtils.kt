@@ -11,7 +11,9 @@ object OpenGLUtils {
 
     fun checkError(where: String) {
         val errorCode = GL11.glGetError()
-        if (errorCode != GL11.GL_NO_ERROR)
+        if (errorCode != GL11.GL_NO_ERROR) {
             System.err.println("$where: $errorCode")
+            throw RuntimeException("$where: $errorCode")
+        }
     }
 }

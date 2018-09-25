@@ -2,6 +2,7 @@ package com.flappy.game.graphics
 
 import com.flappy.game.math.Matrix4f
 import com.flappy.game.math.Vector3f
+import com.flappy.game.util.OpenGLUtils
 import com.flappy.game.util.ShaderUtils
 import org.lwjgl.opengl.GL20
 
@@ -21,10 +22,13 @@ class Shader {
         val TCOORD_ATTRIB = 1
         lateinit var BG: Shader
         lateinit var BIRD: Shader
+        lateinit var PIPE: Shader
 
         fun LoadAll() {
             BG = Shader("shaders/bg.vert", "shaders/bg.frag")
             BIRD = Shader("shaders/bird.vert", "shaders/bird.frag")
+            PIPE = Shader("shaders/pipe.vert", "shaders/pipe.frag")
+            OpenGLUtils.checkError("LoadAll")
         }
     }
 

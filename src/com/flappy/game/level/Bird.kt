@@ -24,10 +24,10 @@ class Bird {
 
     init {
         val vertices = floatArrayOf(
-                -SIZE / 2f, -SIZE / 2f, 0.1f, //Why?
-                -SIZE / 2f, SIZE / 2f, 0.1f,
-                SIZE / 2f, SIZE / 2f, 0.1f,
-                SIZE / 2f, -SIZE / 2f, 0.1f
+                -SIZE / 2f, -SIZE / 2f, 0.2f, //Why?
+                -SIZE / 2f, SIZE / 2f, 0.2f,
+                SIZE / 2f, SIZE / 2f, 0.2f,
+                SIZE / 2f, -SIZE / 2f, 0.2f
         )
 
         val indices = byteArrayOf(

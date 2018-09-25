@@ -4,7 +4,6 @@ import com.flappy.game.graphics.Shader
 import com.flappy.game.input.Input
 import com.flappy.game.level.Level
 import com.flappy.game.math.Matrix4f
-import com.flappy.game.util.OpenGLUtils
 import org.lwjgl.glfw.GLFW.*
 import org.lwjgl.opengl.GL
 import org.lwjgl.opengl.GL11.*
@@ -70,6 +69,9 @@ class Main : Runnable {
         Shader.BIRD.setUniformMat4("pr_matrix", pr_matrix)
         Shader.BIRD.setUniform1i("tex", 1)
 
+        Shader.PIPE.setUniformMat4("pr_matrix", pr_matrix)
+        Shader.PIPE.setUniform1i("tex", 1)
+
         level = Level()
     }
 
@@ -78,7 +80,7 @@ class Main : Runnable {
 
         var lastTime = System.nanoTime()
         var delta = 0.0
-        val ns = 1000000000 / 60.0
+        val ns = 1000000000.0f / 60.0f
         var timer = System.currentTimeMillis()
         var updates = 0
         var frames = 0
@@ -104,6 +106,9 @@ class Main : Runnable {
             if (glfwWindowShouldClose(window))
                 running = false
         }
+
+        glfwDestroyWindow(window)
+        glfwTerminate()
     }
 
     fun update() {
@@ -114,7 +119,6 @@ class Main : Runnable {
     fun render() {
         glClear(GL_COLOR_BUFFER_BIT.or(GL_DEPTH_BUFFER_BIT))
         level?.render()
-        OpenGLUtils.checkError("Main::render")
         glfwSwapBuffers(window)
     }
 }

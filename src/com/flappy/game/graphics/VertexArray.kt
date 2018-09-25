@@ -63,13 +63,10 @@ class VertexArray {
     }
 
     fun draw() {
-        OpenGLUtils.checkError("Before")
         if (ibo > 0)
             glDrawElements(GL_TRIANGLES, count, GL_UNSIGNED_BYTE, 0)
         else
             glDrawArrays(GL_TRIANGLES, 0, count)
-        OpenGLUtils.checkError("After")
-
     }
 
     fun render() {
