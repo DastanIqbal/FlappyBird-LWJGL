@@ -7,7 +7,7 @@ build/*
 .DS_Store
 /captures
 .externalNativeBuild
-out
+out/
 target/
 /src/main/dist/bin/*.yml
 !/src/main/dist/bin/config.yml.sample
